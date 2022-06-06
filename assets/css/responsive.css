@@ -1,0 +1,124 @@
+ /* Mobile & Tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 125px;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .home-header {
+        background-color: var(--text-color--bold);
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-header__logo {
+        margin: 0 0 10px;
+    }
+
+    .home-header__nav-list {
+        display: none;
+    }
+
+    .home-sidebar {
+        margin-left: 0;
+    } 
+    
+    .home-banner {
+        margin-top: 0;
+    }
+
+    .home-banner__search,
+    .home-banner__category-list {
+        width: 100%;
+    }
+
+    .home-banner__search-item {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .home-next-holiday__inner {
+        flex-direction: column;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .home-next-holiday__text {
+        margin-right: auto;
+    }
+
+    .home-next-holiday__img {
+        width: 100%;
+        transform: translateY(-16%);
+    }
+
+    .home-beaches__countdown {
+        width: 100%;
+    }
+    
+    .home-footer__form-btn {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    .home-footer__footer {
+        flex-direction: column;
+    }
+    
+    .t-m-sidebar {
+        display: block;
+    }
+}
+
+ /* Tablet */
+@media (max-width: 1023px) and (min-width: 780px) {
+    
+}
+
+ /* Mobile */
+@media (max-width: 739px) {
+    .home-next-holiday__inner {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .home-beaches__photos-list {
+        height: 169px;
+    }
+
+    .home-beaches__countdown {
+        transform: translateY(0);
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    .home-package__section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-package__price {
+        margin-top: 10px;
+    }
+
+    .home-footer__form {
+        flex-direction: column;
+    }
+
+    .home-footer__form-input-wrapper {
+        margin-right: 0;
+    }
+
+    .home-footer__form-input-wrapper,
+    .home-footer__form-btn {
+        width: 100%;
+    }
+
+    .home-footer__socials-list {
+        margin-bottom: 12px;
+    }
+}
