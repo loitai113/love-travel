@@ -53,6 +53,7 @@
     list-style: none;
     margin: 0;
     position: absolute;
+    z-index: 1;
     width: 190px;
     background-color: var(--white-color);
     box-shadow: 0px 2px 5px #f1f1f1;
@@ -233,7 +234,7 @@
 
 .home-banner__category-list {
     width: 600px;
-    margin: 55px auto 0;
+    margin: 55px auto 0!important;
 }
 
 .home-banner__category-item {
@@ -266,6 +267,7 @@
 .home-sidebar__icon {
     padding: 0 15px;
     font-size: 3rem;
+    user-select: none;
 }
 
 .home-sidebar__icon:hover {
@@ -280,7 +282,7 @@
     right: 0;
     width: 360px;
     background-color: var(--white-color);
-    z-index: 1;
+    z-index: 999;
     padding: 20px 34px 0;
     overflow-y: scroll;
     transform: translateX(100%);
@@ -518,6 +520,7 @@
 
 .home-beaches__section--right {
     position: relative;
+    z-index: -1;
     
 }
 .home-beaches__photos-list {
@@ -731,6 +734,7 @@
 
 .home-package__item {
     position: relative;
+    z-index: -1;
     border: 1px solid #f1f1f1;
     margin-bottom: 30px;
 }
@@ -1084,7 +1088,7 @@
     right: 0;
     background-color: var(--text-color--bold);
     color: var(--white-color);
-    z-index: 2;
+    z-index: 999;
     padding: 40px;
     overflow-y: scroll;
     transform: translateX(100%);
