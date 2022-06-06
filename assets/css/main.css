@@ -3,7 +3,10 @@
     height: var(--header-height);
     background-color: rgba(0,0,0,0.12);
     padding: 20px 50px;
-    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     align-items: center;
     color: var(--white-color);
     font-size: 1.4rem;
@@ -178,6 +181,10 @@
     height: 44px;
     line-height: 44px;
     margin: 0 auto;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     border-radius: 30px;
     position: relative;
@@ -189,6 +196,10 @@
 
 .home-banner__search-placeholder {
     flex: 1;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     padding-left: 25px;
     font-size: 1.5rem;
@@ -241,6 +252,10 @@
     text-decoration: none;
     font-size: 1.1rem;
     color: var(--white-color);
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,8 +301,8 @@
     padding: 20px 34px 0;
     overflow-y: scroll;
     transform: translateX(100%);
+    -webkit-transform: translateX(100%);
     transition: transform 0.4s linear;
-    -webkit-transition: transform 0.4s linear;
     will-change: transform;
 }
 
@@ -303,6 +318,10 @@
     font-size: 2rem;
     background-color: var(--white-color);
     color: #ccc;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,6 +332,10 @@
 }
 
 .home-sidebar__section {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     flex-direction: column;
 }
@@ -348,11 +371,19 @@
 
 .home-sidebar__places-list {
     margin-top: 28px;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     flex-direction: column;
 }
 
 .home-sidebar__place-item {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     margin-bottom: 28px;
 }
@@ -432,9 +463,14 @@
 .home-next-holiday__img {
     width: 100%;
     transform: translateY(-38%);
+    -webkit-transform: translateY(-38%);
 }
 
 .home-next-holiday__inner {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -534,17 +570,17 @@
     visibility: hidden;
     transition: opacity 0.4s linear,
                 visibility 0.4s linear;
-    -webkit-transition: opacity 0.4s linear,
-    visibility 0.4s linear;
     height: 100%;
 }
 
 .home-beaches__photo-item:nth-child(2) {
     transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
 }
 
 .home-beaches__photo-item:nth-child(3) {
     transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
 }
 
 .home-beaches__photo-item--selected {
@@ -558,11 +594,16 @@
 }
 
 .home-beaches__switch-photo {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     position: absolute;
     top: 16px;
     left: 50%;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     padding: 10px;
     z-index: 1;
 }
@@ -589,10 +630,15 @@
     width: 490px;
     background-color: #14b9d5;
     position: relative;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     align-items: center;
     margin: 0 auto;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 .home-beaches__countdown-item {
@@ -610,6 +656,7 @@
     top: 50%;
     right: -12px;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     font-size: 4rem;
     font-weight: 100;
     color: var(--black-color);
@@ -633,6 +680,10 @@
 }
 
 .home-beaches__introduce {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     margin-bottom: 22px;
 }
@@ -689,6 +740,7 @@
 
 .home-discover__item-background-img {
     object-fit: cover;
+    -webkit-object-fit: cover;
     width: 100%;
     height: 100%;
     position: relative;
@@ -783,6 +835,10 @@
     top: calc(100% - 25px);
     right: 20px;
     border-radius: 100%;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -817,6 +873,10 @@
     border-bottom: 1px solid #f1f1f1;
     padding: 16px 0;
     color: var(--text-color--bold);
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -894,6 +954,10 @@
 }
 
 .home-package__price {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     align-items: center;
     letter-spacing: 1px;
@@ -952,6 +1016,10 @@
 
 .home-footer__form {
     margin-top: 60px;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     align-items: flex-end;
 }
@@ -1062,6 +1130,10 @@
 .home-footer__footer {
     margin: 0 auto;
     background-color: #14b9d5;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1095,8 +1167,8 @@
     padding: 40px;
     overflow-y: scroll;
     transform: translateX(100%);
+    -webkit-transform: translateX(100%);
     transition: transform 0.4s linear;
-    -webkit-transition: transform 0.4s linear;
     will-change: transform;
 }    
 
